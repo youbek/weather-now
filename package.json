@@ -1,6 +1,6 @@
 {
   "name": "what-is-weather-now",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CLI tool to get weather forecast",
   "main": "dist/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "what-is-weather-now": "./dist/index.js"
   },
   "files": [
-    "./dist"
+    "./dist/*"
   ],
   "keywords": [
     "Weather",
