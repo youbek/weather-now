@@ -1,0 +1,35 @@
+{
+  "name": "weather-now",
+  "version": "0.0.1",
+  "description": "CLI tool to get weather forecast",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest test",
+    "prebuild": "rimraf ./dist",
+    "build": "tsc"
+  },
+  "keywords": [
+    "Weather",
+    "CLI",
+    "Forecast"
+  ],
+  "author": "Yusufbek Alimatov",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node-emoji": "^1.8.1",
+    "@types/qs": "^6.9.7",
+    "axios": "^0.25.0",
+    "chalk": "^4.0.0",
+    "commander": "^9.0.0",
+    "dotenv": "^14.3.2",
+    "enquirer": "^2.3.6",
+    "node-emoji": "^1.11.0",
+    "ora": "^5.0.0",
+    "qs": "^6.10.3",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.13",
+    "typescript": "^4.5.5"
+  }
+}
