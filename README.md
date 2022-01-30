@@ -5,5 +5,5 @@ CLI tool to get weather forecast
 
 #### Usage
 ```
-npx weather-now
+npx what-is-weather-now
 ```
