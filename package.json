@@ -1,20 +1,31 @@
 {
-  "name": "weather-now",
+  "name": "what-is-weather-now",
   "version": "0.0.1",
   "description": "CLI tool to get weather forecast",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest test",
     "prebuild": "rimraf ./dist",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
+  "bin": {
+    "what-is-weather-now": "./dist/index.js"
+  },
+  "files": [
+    "./dist"
+  ],
   "keywords": [
     "Weather",
     "CLI",
     "Forecast"
   ],
-  "author": "Yusufbek Alimatov",
+  "author": "Yusufbek Alimatov <youbekalimatov@gmail.com> (https://yusufbek.com)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youbek/weather-now.git"
+  },
   "dependencies": {
     "@types/node-emoji": "^1.8.1",
     "@types/qs": "^6.9.7",
