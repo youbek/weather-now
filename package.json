@@ -1,13 +1,13 @@
 {
   "name": "what-is-weather-now",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "CLI tool to get weather forecast",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest test",
     "prebuild": "rimraf ./dist",
     "build": "tsc",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "bin": {
     "what-is-weather-now": "./dist/index.js"
@@ -27,19 +27,18 @@
     "url": "https://github.com/youbek/weather-now.git"
   },
   "dependencies": {
-    "@types/node-emoji": "^1.8.1",
-    "@types/qs": "^6.9.7",
     "axios": "^0.25.0",
     "chalk": "^4.0.0",
     "commander": "^9.0.0",
-    "dotenv": "^14.3.2",
     "enquirer": "^2.3.6",
     "node-emoji": "^1.11.0",
     "ora": "^5.0.0",
-    "qs": "^6.10.3",
-    "rimraf": "^3.0.2"
+    "qs": "^6.10.3"
   },
   "devDependencies": {
+    "rimraf": "^3.0.2",
+    "@types/qs": "^6.9.7",
+    "@types/node-emoji": "^1.8.1",
     "@types/node": "^17.0.13",
     "typescript": "^4.5.5"
   }

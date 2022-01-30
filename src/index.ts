@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import "dotenv/config";
-
 import { WeatherApi } from "./api/WeatherApi";
 import { Program } from "./program/Program";
 
