@@ -11,7 +11,7 @@ import {
 export class WeatherApi {
   private readonly openWeatherHost =
     "https://api.openweathermap.org/data/2.5/weather";
-  private readonly openWeather_API_KEY = process.env.OPEN_WEATHER_API_KEY;
+  private readonly openWeather_API_KEY = "d50c554c2cde099a7454467f4bf676aa";
 
   private async getRequest(query: object = {}) {
     try {
